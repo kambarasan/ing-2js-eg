@@ -1,0 +1,101 @@
+
+
+.al{
+    width: 400px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+.al input{
+    margin-top: 40px;
+    width: 210px;
+    border: 1px solid black;
+}
+
+body {
+    font-size: 1.5em;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1em 3em;
+    background: url("https://png.pngtree.com/thumb_back/fw800/back_our/20200817/ourmid/pngtree-magic-red-background-advertising-background-png-image_395568.jpg") no-repeat center/cover;
+}
+
+#show{
+    background: transparent;
+    border: 1px solid black;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    width: 200px;
+}
+#close {
+    background: transparent;
+    border: 1px solid black;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    width: 200px;
+    margin-left: 500px;
+    margin-top: -165px;
+
+}
+#show:hover,
+#close:hover {
+    background: transparent;
+
+    cursor: pointer;
+}
+#dialog {
+    display: none;
+    /*position: fixed;*/
+    top: 40vh;
+    left: 30vw;
+    width: 800px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    background-color: transparent;
+    color: #fff;
+    transition: .4s;
+    animation: an 1s alternate;
+}
+
+@keyframes an {
+    0% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#dialog.show {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow-y: auto;
+    /*scroll-snap-type: y mandatory;*/
+}
+
+.block1{
+    height: 100px;
+    scroll-snap-align: end;
+}
+
+.block{
+    margin-left: 550px;
+    margin-top: -330px;
+}
+
+
+.btn23{
+    width:200px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid black;
+    color: #fdfdfd;
+}
